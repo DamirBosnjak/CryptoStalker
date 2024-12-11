@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Stalker</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+<body>
+    <h1>Welcome to Crypto Stalker</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Price (USD)</th>
+                <th>Changes (in 24h)</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <% coins.forEach(coin => { %> 
+            <tr>
+                <td><img src="<%= coin.image %>" alt="<%= coin.name %> icon" width="30"></td>
+                <td><%= coin.name %></td>
+                <td><%= coin.symbol %></td>
+                <td><%= coin.current_price %></td>
+                <td><%= coin.price_change_percentage_24h %></td>
+            </tr>
+            <% }); %>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

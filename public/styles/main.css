@@ -1,0 +1,79 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table headers */
+thead tr {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table cells */
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ececec;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #d3e0ff;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
